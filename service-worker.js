@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/dad-chain/precache-manifest.da0a6606df2f3d1c8d796699392c8837.js"
+  "/dad_chain/precache-manifest.f6c26ef99eac51e6939a0ac03c1e42c1.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/dad-chain/index.html", {
+workbox.routing.registerNavigationRoute("/dad_chain/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
