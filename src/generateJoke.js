@@ -13,12 +13,7 @@ const addPunctuation = sentence => {
 	return sentence;
 };
 
-const generateSentence = (chain) => {
-	const sentence = chain.start(useUpperCase).end(endFn).process();
-	return addPunctuation(sentence);
-};
-
-const useUpperCase = (wordList) => {
+const shouldStartSentence = (wordList) => {
 		const tmpList = Object.keys(wordList).filter((word) => {
 			return word[0] >= 'A' && word[0] <= 'Z'
 		});
@@ -26,9 +21,14 @@ const useUpperCase = (wordList) => {
 	}
 ;
 
-const endFn = sentence => {
+const shouldEndSentence = sentence => {
 	const length = wordCount(sentence);
 	return length >= 15 && !sentence.match(/(a|an|the|if|or|by|but|I|,)$/i);
+};
+
+const generateSentence = (chain) => {
+	const sentence = chain.start(shouldStartSentence).end(shouldEndSentence).process();
+	return addPunctuation(sentence);
 };
 
 export const generateJoke = (seed) => {
