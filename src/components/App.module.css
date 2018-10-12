@@ -1,0 +1,27 @@
+@value colors: '../colors.css';
+@value background from colors;
+
+.app {
+  background-color: background;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  width: 400px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}

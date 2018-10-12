@@ -1,0 +1,17 @@
+@keyframes swing {
+  33% { transform: rotateZ(-30deg)}
+    66% {transform: rotateZ(30deg)}
+    100% {transform: rotateZ(0deg)}
+
+}
+
+.image {
+    height: 200px;
+    position: relative;
+    left: 0;
+    bottom: 0px;
+}
+
+.image.animated {
+    animation: swing 0.3s 1;
+}

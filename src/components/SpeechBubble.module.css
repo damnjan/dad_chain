@@ -1,0 +1,41 @@
+@value colors: '../colors.css';
+@value background from colors;
+
+.container {
+    flex: 1;
+    min-height: 80px;
+    border-radius: 50%;
+    background: white;
+    padding: 40px;
+    color: black;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    height: 30px;
+    border-left: 60px solid white;
+    background: white;
+    border-bottom-left-radius: 80px 50px;
+    transform: translateY(-2px);
+}
+
+.container:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 60px;
+    height: 30px;
+    background: background;
+    border-bottom-left-radius: 40px 50px;
+    transform: translate(30px, -2px);
+}

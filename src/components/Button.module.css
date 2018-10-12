@@ -1,0 +1,15 @@
+.button {
+    background: white;
+    padding: 5px;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 10px 14px 5px black;
+}
+
+.button:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 6px 10px 5px black;
+}

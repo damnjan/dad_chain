@@ -1,10 +1,16 @@
 {
-  "name": "dad_jokes",
+  "name": "dad_chain",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "markovchain": "^1.0.2",
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-saga": "^0.16.2"
   },
   "devDependencies": {
     "react-scripts": "2.0.4"
